@@ -1,13 +1,18 @@
-<div class="row">
-  <h1>Read the Latest Articles from 'The Onion News Network'</h1>
-</div>
-<div class="row">
-  <div class="col s2"></div>
-  <div class="col s8 left-align">
-    {{#each article}}
-      <div class="card-panel">
-        <h4>{{this.title}}</h4>
-        <a href="/readArticle/{{this._id}}" class="waves-effect waves-light btn" id="btnRead">Read Article</a>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 offset-md-right-2">
+        <h1>The Star</h1>
+        <h2>News Scraper</h2>
       </div>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 offset-md-right-1" id="articleContainer">
+      <h2>News! News! News!</h2>
+    </div>
   </div>
 </div>

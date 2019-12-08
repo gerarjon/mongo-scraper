@@ -1,0 +1,80 @@
+/*The commented out block below was used for debugging the layout's paddings and margins*/
+/** {
+border-width: 1px;
+border-style: solid;
+border-color: red;
+}*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.jumbotron {
+  /*  Background fallback in case of IE8 & down, or in case the image doesn't load, such as with slower connections  */
+  background: url(../images/background.jpg) center center no-repeat fixed #464646;
+
+  /*This is what makes the background image rescale based on the container's size
+  Use vendor prefixes to support different browsers*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  font-family: Serif, Monospace;
+  height: 400px;
+  width: auto;
+  opacity: 0.5;
+}
+
+.jumbotron h1, .jumbotron h2, .jumbotron h3 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 56px;
+}
+
+.container {
+  padding-bottom: 24px;
+}
+
+.article {
+  background-color: #cccccc;
+}
+
+.article:hover {
+  background-color: #eeeeee;
+}
+
+.headline {
+  background-color: #aaaabb;
+  padding: 10px;
+}
+
+.headline a {
+  color: #000000;
+  text-decoration: none; /* no underline */
+}
+
+.headline a:hover, .summary:hover, .category:hover, .sub-category:hover {
+  color: #555555;
+}
+
+.save-article {
+  margin: 5px;
+}
+
+#scrape-new-articles, #clear-saved-articles, #clear-articles, #save-comment-submit {
+  text-transform: uppercase;
+}
+.footer {
+  color: #ffffff;
+}
+
+.fa-star, .fa-star-o, .fa-comments {
+  cursor: pointer;
+  color: #000000;
+}

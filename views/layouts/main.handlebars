@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" charset="utf-8">
-  {{!-- Materialize CSS --}}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  {{!-- Materialize Icons --}}
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  {{!-- Fontawesome --}}
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  {{!-- External CSS --}}
-  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
-  <title>Onion News Scraper</title>
-</head>
+  <head>
 
-<body>
+    <meta charset="UTF-8">
+    <title>The Star News Scraper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {{> nav}}
+    <!-- Favicon for the webpage -->
+    <link rel="icon" href="assets/images/favicon.jpg" type="image/jpeg" sizes="16x16">
 
-  <main>
-    <div class="container">
-      {{{body}}}
-    </div>
-  </main>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
-  {{> footer}}
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+  </head>
+
+  <body class="text-center">
+    {{> nav}}
+
+    <main>
+			{{{ body }}}
+    </main>
+
+    {{> footer}}
+
+    <!-- Load the associated JavaScript files -->
+    <script type="text/javascript" src="/assets/javascript/app.js"></script>
+
+  </body>
 
 </html>
