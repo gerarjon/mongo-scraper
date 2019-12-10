@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/gerarjon/mongo-scraper#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "bad-words": "^3.0.0",
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",

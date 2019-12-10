@@ -10,6 +10,7 @@ var filter = new Filter();
 // Our scraping tools
 var cheerio = require("cheerio");
 var request = require("request");
+var axios = require("axios");
 
 // Require all models
 var db = require("./models");
@@ -37,7 +38,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // If deployed, use the deployed database. Otherwise use the local torontoStar database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/torontoStar";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongo-scraper";
 
 // Set mongoose to leverage built-in JavaScript ES6 Promises
 mongoose.Promise = Promise;
